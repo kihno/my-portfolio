@@ -1,11 +1,12 @@
 import React from "react";
+import '../styles/Home.css';
 
 const Home = () => {
 
     return (
-        <main>
-            <h1>My Portfolio</h1>
-            <ul>
+        <main className='home'>
+            <h1 className='logo'>My Portfolio</h1>
+            <ul className='links home-links'>
                 <li>
                     <a href='about'>About Me</a>
                 </li>
