@@ -1,11 +1,12 @@
 import React from "react";
+import logo from '../images/me-logo.png';
 import '../styles/Home.css';
 
 const Home = () => {
 
     return (
         <main className='home'>
-            <h1 className='logo'>My Portfolio</h1>
+            <img className='logo' src={logo}></img>
             <ul className='links home-links'>
                 <li>
                     <a href='about'>About Me</a>
