@@ -1,0 +1,166 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--project-width);
+}
+
+.projectContainer {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    padding: 20px;
+    gap: 40px;
+    margin: auto;
+}
+
+.projectImage {
+    --background-color: black;
+    --border-color: linear-gradient(to bottom right, gold, rgba(255, 217, 0, 0.459));
+    --border-width: 0.5em;
+    --edge-size: 3em;
+    --project-width: 250px;
+  
+    width: var(--project-width);
+    height: calc(var(--project-width) - calc(var(--project-width) / 4));
+    background: var(--background-color);
+    padding: 0.5em 1.5em;
+    border: 0;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    clip-path: polygon(
+      var(--edge-size) 0%,
+      100% 0,
+      100% calc(100% - var(--edge-size)),
+      calc(100% - var(--edge-size)) 100%,
+      0 100%,
+      0% var(--edge-size)
+    );
+}
+
+.projectImage, .projectDescription {
+    max-width: 300px;
+}
+
+.projectDescription {
+    background-color: white;
+    color: black;
+}
+
+.projectDescription>p {
+    background-color: white;
+    color: black;
+}
+  
+.projectImage::before {
+content: "";
+position: absolute;
+inset: 0;
+background: var(--border-color);
+z-index: -2;
+}
+
+.projectImage::after {
+content: "";
+position: absolute;
+inset: 0;
+background: var(--background-color);
+z-index: -1;
+clip-path: polygon(
+    /*top left 1*/ 
+    var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+    /*top left 2*/ 
+    calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+    /*top right*/ 
+    calc(100% - var(--border-width)) var(--border-width),
+    /*bottom right - 1*/
+    calc(100% - var(--border-width))
+    calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)),
+    /*bottom right - 2*/ 
+    calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5))
+    calc(100% - var(--border-width)),
+    /*bottom left*/ 
+    calc(var(--border-width)) calc(100% - var(--border-width))
+);
+}
+
+
+  
+
+/* .project {
+    --edge-size: 2em;
+    --border-width: 2em;
+    --border-color: gold;
+    --background: white;
+
+    width: 200px;
+    height: 150px;
+    background: var(--background);
+    border: 0;
+    display: inline-grid;
+    position: relative;
+    isolation: isolate;
+    place-content: center;
+    padding: 0.5em;
+    clip-path: polygon(
+        var(--edge-size) 0%, 
+        100% 0%, 
+        100% calc(100% - var(--edge-size)), 
+        calc(100% - var(--edge-size)) 100%, 
+        0% 100%, 
+        0% var(--edge-size));
+}
+
+.project::before,
+.project::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.project::before {
+    background: var(--border-color);
+    z-index: -2;
+}
+
+.project::after {
+    background: var(--background);
+    z-index: -1;
+    clip-path: polygon(
+        /*top-left 1*/
+        /* var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+        /*top-left 2*/
+        /* calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width), */
+        /*top-right*/
+        /* calc(100% - var(--border-width)) var(--border-width), */
+        /*bottom-right 1*/
+        /* calc(100% - var(--border-width)) calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)), */
+        /*bottom-right 2*/
+        /* calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)), */
+        /*bottom-left*/
+        /* calc(var(--border-width)) calc(100% - var(--border-width)), */
+    /* );
+}  */
+
+/* 
+.project {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 3px solid gold;
+    clip-path: polygon(
+        0 10%,
+        10% 0,
+        90% 0,
+        100% 10%,
+        100% 90%,
+        90% 100%,
+        10% 100%,
+        0% 90%,
+        0% 10%
+    );
+} */
