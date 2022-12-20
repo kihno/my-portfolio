@@ -1,0 +1,25 @@
+.textLayer, .annotationLayer {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.resume:hover {
+    box-shadow:0 0 40px 4px #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    transform: scale(1.01);
+}
+
+.downloadBtn {
+    cursor: pointer;
+}
