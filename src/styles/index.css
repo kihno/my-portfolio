@@ -1,7 +1,10 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
