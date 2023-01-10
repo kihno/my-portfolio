@@ -1,0 +1,57 @@
+.button {
+    /* display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox; */
+    display:flex;
+    width: 80px;
+    padding: 3px;
+    /* -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center; */
+    justify-content:center;
+    border:2px solid #19cae0;
+    border-radius:0;
+    background-color:transparent;
+    box-shadow:0 0 10px 1px rgba(25,202,224,.2);
+    /* -webkit-transition:.3s cubic-bezier(.645, .045, .355, 1); */
+    transition:.3s cubic-bezier(.645, .045, .355, 1);
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+    text-transform:capitalize;
+    cursor:pointer
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color:rgba(25,202,224,.2);
+    /* background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(25,202,224,.2)),to(rgba(25,202,224,.2))),-webkit-gradient(linear,left top,left bottom,from(rgba(28,30,31,.9)),to(rgba(28,30,31,.9))),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png"); */
+    background-image:linear-gradient(180deg,rgba(25,202,224,.2),rgba(25,202,224,.2)),linear-gradient(180deg,rgba(28,30,31,.9),rgba(28,30,31,.9)),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png");
+    background-position:0 0,0 0,100% 100%;
+    background-size:auto,auto,800px;
+    background-attachment:scroll,scroll,scroll;
+    box-shadow:0 0 10px 1px rgba(25,202,224,.4);
+    /* -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1); */
+    transform:scale(1.1);
+    color:#fff
+}
+    
+/* .button.footer {
+    width:55px;
+    height:55px;
+    padding-top:0;
+    padding-bottom:0;
+    border-radius:50%
+}
+    
+.button.footer:hover {
+    background-image:none;
+    background-position:0 0;
+    background-size:auto;
+    background-attachment:scroll;
+    -webkit-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    transform:scale(1.2);
+} */

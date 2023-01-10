@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f366912.css",
+    "main.js": "/static/js/main.90bea5f9.js",
+    "static/media/calculator.png": "/static/media/calculator.c143b604e802a80d3927.png",
+    "static/media/wheres-waldo.png": "/static/media/wheres-waldo.910b6019f1755179eecd.png",
+    "static/media/shopping-cart.png": "/static/media/shopping-cart.bbb2c7e0c8b7ba4c7b42.png",
+    "static/media/restaurant.png": "/static/media/restaurant.d47513a7847b4c9e7162.png",
+    "static/media/memory-game.png": "/static/media/memory-game.6c63828f6134609fb923.png",
+    "static/media/battleship.png": "/static/media/battleship.37acf79767f76a18f7a0.png",
+    "static/media/blog.png": "/static/media/blog.f687fa81a7efc6a4e224.png",
+    "static/media/weather.png": "/static/media/weather.49833b325ef5a6a636f3.png",
+    "static/media/me-logo.png": "/static/media/me-logo.c2ff00eed8aacbb4f7a1.png",
+    "static/media/stonecutters.png": "/static/media/stonecutters.a796778f5f5dff8da12a.png",
+    "static/media/roshambo.png": "/static/media/roshambo.18c4da3fe5701186403b.png",
+    "static/media/library.png": "/static/media/library.a87a79f017bb17f58ada.png",
+    "static/media/n64-store.png": "/static/media/n64-store.e099f1b50f3e59c0dbe9.png",
+    "static/media/etchasketch.png": "/static/media/etchasketch.445ffabca03c90f0a77d.png",
+    "static/media/nm-logo-abr.png": "/static/media/nm-logo-abr.e7553ab4251b8a00be65.png",
+    "static/media/taskmaster.png": "/static/media/taskmaster.841b0315a8ba23622c07.png",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.649cdab37a76354183c6.png",
+    "static/media/Miles_Resume.pdf": "/static/media/Miles_Resume.7f18f3eef710fb79e950.pdf",
+    "static/media/github-icon.png": "/static/media/github-icon.7f7ef100a67fc5c5c19c.png",
+    "index.html": "/index.html",
+    "main.2f366912.css.map": "/static/css/main.2f366912.css.map",
+    "main.90bea5f9.js.map": "/static/js/main.90bea5f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f366912.css",
+    "static/js/main.90bea5f9.js"
+  ]
+}

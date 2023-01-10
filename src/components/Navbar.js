@@ -12,7 +12,8 @@ const About = () => {
 
     return (
         <nav className='navbar'>
-            <img className='logo-abr' src={logoAbr} onClick={goHome} alt="NM"></img>
+            {/* <img className='logo-abr' src={logoAbr} onClick={goHome} alt="NM"></img> */}
+            <h1 className='me' onClick={goHome}>NM</h1>
             <ul className='links nav-links'>
                 <input type='checkbox' id='checkbox'></input>
                 <label htmlFor='checkbox' className='hamburger'>&#9776;</label>

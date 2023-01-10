@@ -16,6 +16,7 @@ import Weather from  '../images/thumbnails/weather.png';
 import WheresWaldo from  '../images/thumbnails/wheres-waldo.png';
 import Stonecutters from  '../images/thumbnails/stonecutters.png';
 import '../styles/Projects.css';
+import '../styles/button.css';
 
 const Projects = () => {
     let projects = [
@@ -49,7 +50,7 @@ const Projects = () => {
         },
         {
           title: 'Library',
-          description: 'A library app for keeping track of your reading list.',
+          description: 'A library CRUD app for keeping track of your reading list.',
           image: Library,
           link: '',
           repo: '',
@@ -129,7 +130,6 @@ const Projects = () => {
     return (
         <main>
             <Navbar />
-            <h1>Projects</h1>
             <section className='projectContainer'>
                 {projects.map((project, index) => {
                     return <div className='project' key={index}>
@@ -137,8 +137,8 @@ const Projects = () => {
                                 <div className='content'>
                                     <p>{project.description}</p>
                                         <div className="buttons">
-                                            <button>Live Site</button>
-                                            <button>Repo</button>
+                                            <a href={project.link} className='button'>Live Site</a>
+                                            <a href={project.repo} className='button'>Repo</a>
                                         </div>
                                 </div>
                                 <img src={project.image} alt={project.title}></img>

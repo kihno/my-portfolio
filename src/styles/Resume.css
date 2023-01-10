@@ -6,18 +6,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+}
+
+.resume-page-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .resume {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 40px;
 }
 
 .resume:hover {
-    box-shadow:0 0 40px 4px #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
+    opacity: 0.25;
+    border: 1px solid #00fffb;
+}
+
+.resumeContainer:hover {
+    /* box-shadow:0 0 40px 4px #bc13fe,
+    inset 0 0 1.3rem #bc13fe; */
+    background-color:rgba(25,202,224,.2);
+    background-image:linear-gradient(180deg,rgba(25,202,224,.2),rgba(25,202,224,.2)),linear-gradient(180deg,rgba(28,30,31,.9),rgba(28,30,31,.9)),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png");
     transform: scale(1.01);
 }
 

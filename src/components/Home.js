@@ -11,7 +11,8 @@ const Home = () => {
             <div id='stars3'></div>
             <div id='stars4'></div>
             <div id='title'>
-                <img className='logo' src={logo} alt='Nick Miles'></img>
+                {/* <img className='logo' src={logo} alt='Nick Miles'></img> */}
+                <h1 className='me'>Nick Miles</h1>
                 <ul className='links home-links'>
                     <li>
                         <a href='about'>About Me</a>

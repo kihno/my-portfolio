@@ -10,11 +10,14 @@ p, h3 {
 }
 
 .projectContainer {
-    max-width: 1000px;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    border: 1px solid #00fffb;
+    border-radius: 10px;
+    max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    padding: 20px;
+    padding: 60px;
     gap: 40px;
     margin: auto;
 }
@@ -160,6 +163,8 @@ clip-path: polygon(
 
   .buttons {
     margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
   }
 
   .content > p {
@@ -169,7 +174,7 @@ clip-path: polygon(
   
   .project h3,
   .content {
-    transform: translateY(12ex);
+    transform: translateY(13ex);
   }
   
   .project h3 {
@@ -205,8 +210,9 @@ clip-path: polygon(
   .project:focus::after,
   .project:hover::before,
   .project:focus::before {
-    opacity: 1;
-    background: rgba(0,0,0,0.5);
+    opacity: 0.65;
+    background-color:rgba(25,202,224,.2);
+    background-image:linear-gradient(180deg,rgba(25,202,224,.2),rgba(25,202,224,.2)),linear-gradient(180deg,rgba(28,30,31,.9),rgba(28,30,31,.9)),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png");
   }
   
   .project:hover div,
@@ -216,7 +222,7 @@ clip-path: polygon(
 
   .project:hover,
   .project:focus {
-    transform: scale(1.1);
+    transform: scale(1.1);    
   }
   
   .project:hover img,
@@ -224,4 +230,5 @@ clip-path: polygon(
     transform: scale(1.05) rotate(1deg);
   }
   
+
   
