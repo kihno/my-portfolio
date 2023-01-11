@@ -10,9 +10,14 @@ const Home = () => {
             <div id='stars2'></div>
             <div id='stars3'></div>
             <div id='stars4'></div>
-            <div id='title'>
+            <div id='menu'>
                 {/* <img className='logo' src={logo} alt='Nick Miles'></img> */}
-                <h1 className='me'>Nick Miles</h1>
+                <div className='titleContainer'>
+                    <h1 className='me1'>Nick Miles</h1>
+                    <h1 className='me2'>Nick Miles</h1>
+                    <h1 className='me3'>Nick Miles</h1>
+                </div>
+   
                 <ul className='links home-links'>
                     <li>
                         <a href='about'>About Me</a>
