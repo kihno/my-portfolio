@@ -17,4 +17,5 @@ section {
 
 .icon:hover {
     transform: scale(1.2);
+    box-shadow: 0 0 10px 0 rgb(25 202 224 / 50%);
 }

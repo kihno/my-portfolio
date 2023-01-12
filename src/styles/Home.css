@@ -17,35 +17,32 @@
 }
 
 
-h1 {
+.title {
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
+    text-align: center;
+    color: #00fffb;
+    font-size: 3em;
+    letter-spacing: 8px;
+    font-family: 'Press Start 2P';
+    font-weight: 400;
+    /*Create overlap*/
+
+    margin: 0;
+    line-height: 0;
+    /*Animation*/
+
+    animation: glitch1 2.5s infinite;
 }
 
-h1 {
-text-align: center;
-color: #00fffb;
-font-size: 3em;
-letter-spacing: 8px;
-font-family: 'Press Start 2P';
-font-weight: 400;
-/*Create overlap*/
-
-margin: 0;
-line-height: 0;
-/*Animation*/
-
-animation: glitch1 2.5s infinite;
+.title2 {
+    color: #ed1e79;
+    animation: glitch2 2.5s infinite;
 }
 
-h1:nth-child(2) {
-color: #ed1e79;
-animation: glitch2 2.5s infinite;
-}
-
-h1:nth-child(3) {
-color: #fff;
-animation: glitch3 2.5s infinite;
+.title3 {
+    color: #fff;
+    animation: glitch3 2.5s infinite;
 }
 /*Keyframes*/
 

@@ -218,6 +218,7 @@ clip-path: polygon(
   .project:hover div,
   .project:focus div {
     opacity: 1;
+    box-shadow: 0 0 10px 0 rgb(25 202 224 / 50%);
   }
 
   .project:hover,

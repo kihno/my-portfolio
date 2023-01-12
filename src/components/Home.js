@@ -13,9 +13,9 @@ const Home = () => {
             <div id='menu'>
                 {/* <img className='logo' src={logo} alt='Nick Miles'></img> */}
                 <div className='titleContainer'>
-                    <h1 className='me1'>Nick Miles</h1>
-                    <h1 className='me2'>Nick Miles</h1>
-                    <h1 className='me3'>Nick Miles</h1>
+                    <h1 className='title title1'>Nick Miles</h1>
+                    <h1 className='title title2'>Nick Miles</h1>
+                    <h1 className='title title3'>Nick Miles</h1>
                 </div>
    
                 <ul className='links home-links'>
