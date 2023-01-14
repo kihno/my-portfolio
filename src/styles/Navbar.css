@@ -1,14 +1,39 @@
 .navbar {
     display: flex;
-    gap: 10px;
+    gap: 100px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 40px;
+    width: 100%;
+}
+
+.heroContainer {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .titleAbr {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    text-align: center;
+    color: #ed1e79;
+    font-family: 'Press Start 2P';
+
+    /*Create overlap*/
+
+    margin: 0;
+    line-height: 0;
+    /*Animation*/
+
+    animation: glitch1 2.5s infinite;
+}
+
+.titleAbr2 {
+    color: #00fffb;
+}
+
+.titleAbr3:hover {
+    color: #fff;
+    animation: glitch3 2.5s infinite, glitch2 2.5s infinite;
 }
 
 .links {
@@ -49,10 +74,15 @@
         position: absolute;
         right: 0;
         left: 0;
-        top: 120px;
+        top: 81px;
         text-align: center;
         width: 100%;
         background-color: black;
+        z-index: 1;
+    }
+
+    .navbar {
+        justify-content: space-around;
     }
 
     .menu:hover {
@@ -65,7 +95,8 @@
         padding: 10px;
     }
 
-    .menu li:hover {
+    .menu li:hover,
+    .menu li:focus {
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.1);
     }

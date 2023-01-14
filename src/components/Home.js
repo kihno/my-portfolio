@@ -20,16 +20,16 @@ const Home = () => {
    
                 <ul className='links home-links'>
                     <li>
-                        <a href='about'>About Me</a>
+                        <a href='about' className='homeLink'>About Me</a>
                     </li>
                     <li>
-                        <a href='projects'>Projects</a>
+                        <a href='projects' className='homeLink'>Projects</a>
                     </li>
                     <li>
-                        <a href='resume'>Resume</a>
+                        <a href='resume' className='homeLink'>Resume</a>
                     </li>
                     <li>
-                        <a href='contact'>Contact</a>
+                        <a href='contact' className='homeLink'>Contact</a>
                     </li>
                 </ul>
             </div>

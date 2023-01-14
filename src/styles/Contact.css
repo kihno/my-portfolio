@@ -6,16 +6,17 @@ section {
 
 .iconContainer {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     margin-top: 200px;
 }
 
-.icon {
-    width: 48px;
+a>svg {
+    font-size: 4rem !important;
     cursor: pointer;
 }
 
-.icon:hover {
+a>svg:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 10px 0 rgb(25 202 224 / 50%);
+    color: #00fffb;
+    filter: drop-shadow(0 0 4px rgb(25 202 224 / 30%));
 }

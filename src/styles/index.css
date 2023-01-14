@@ -5,6 +5,10 @@ body {
     width: 100vw;
 }
 
+.App {
+    width: 100vw;
+}
+
 #root {
     height: 100%;
 }
@@ -20,10 +24,6 @@ body, h1, p, ul, li {
 a {
     text-decoration: none;
     color: white;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 main {

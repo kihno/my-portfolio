@@ -1,235 +1,175 @@
-/* .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: var(--project-width);
-} */
-
 p, h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .projectContainer {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    border: 1px solid #00fffb;
-    border-radius: 10px;
-    max-width: 1300px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    padding: 60px;
-    gap: 40px;
-    margin: auto;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  border: 1px solid #00fffb;
+  border-radius: 10px;
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  padding: 60px;
+  gap: 40px;
+  margin: auto;
 }
 
 .project {
-    --background-color: black;
-    --border-color: linear-gradient(to bottom right, gold, rgba(255, 217, 0, 0.459));
-    --border-width: 0.5em;
-    --edge-size: 3em;
-    --project-width: 250px;
-  
-    width: var(--project-width);
-    height: calc(var(--project-width) - calc(var(--project-width) / 4));
-    padding: 0.5em 1.5em;
-    border: 0;
-    position: relative;
-    isolation: isolate;
-    display: inline-grid;
-    place-content: center;
-    clip-path: polygon(
-      calc(100% - var(--edge-size)) 0%,
-      100% var(--edge-size),
-      100% 100%,
-      var(--edge-size) 100%,
-      0 calc(100% - var(--edge-size)),
-      0% 0%
-    );
-    /* clip-path: polygon(
-      var(--edge-size) 0%,
-      100% 0,
-      100% calc(100% - var(--edge-size)),
-      calc(100% - var(--edge-size)) 100%,
-      0 100%,
-      0% var(--edge-size)
-    ); */
+  --background-color: black;
+  --border-color: linear-gradient(to bottom right, gold, rgba(255, 217, 0, 0.459));
+  --border-width: 0.5em;
+  --edge-size: 3em;
+  --project-width: 250px;
+
+  width: var(--project-width);
+  height: calc(var(--project-width) - calc(var(--project-width) / 4));
+  padding: 0.5em 1.5em;
+  border: 0;
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  clip-path: polygon(
+    calc(100% - var(--edge-size)) 0%,
+    100% var(--edge-size),
+    100% 100%,
+    var(--edge-size) 100%,
+    0 calc(100% - var(--edge-size)),
+    0% 0%
+  );
 }
 
 .project {
-    max-width: 300px;
+  max-width: 300px;
 }
-
-/* .projectDescription {
-    background-color: white;
-    color: black;
-}
-
-.projectDescription>p {
-    background-color: white;
-    color: black;
-} */
-  
-/*Border*/
-/* .project::before {
-content: "";
-position: absolute;
-inset: 0;
-background: var(--border-color);
-z-index: -2;
-}
-
-.project::after {
-content: "";
-position: absolute;
-inset: 0;
-background: var(--background-color);
-z-index: -1;
-clip-path: polygon(
-    /*top left 1*/ 
-    /* var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5), */
-    /*top left 2*/ 
-    /* calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width), */
-    /*top right*/ 
-    /* calc(100% - var(--border-width)) var(--border-width), */
-    /*bottom right - 1*/
-    /* calc(100% - var(--border-width))
-    calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5)), */
-    /*bottom right - 2*/ 
-    /* calc(100% - calc(var(--edge-size) + var(--border-width) * 0.5))
-    calc(100% - var(--border-width)), */
-    /*bottom left*/ 
-    /* calc(var(--border-width)) calc(100% - var(--border-width)) */
-/*);
-} */
 
 /*Hover Effect*/
 .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    aspect-ratio: 1/1;
-    position: relative;
-    padding: 1.5rem;
-    color: #ffffff;
-    backface-visibility: hidden;
-    text-decoration: none;
-    overflow: hidden;
-    transition: transform 250ms linear;
-  }
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  backface-visibility: hidden;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 250ms linear;
+}
   
-  .project::before,
-  .project::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.project::before,
+.project::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
 
-    top: 0;
-    left: 0;
-  }
-  
-  .project::before {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33%);
-    transition: 300ms opacity linear;
-  }
-  
-  .project::after {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    transition: 300ms opacity linear;
-  }
-  
-  .project > * {
-    z-index: 1;
-  }
-  
-  .project img {
-    width: 100%;
+  top: 0;
+  left: 0;
+}
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    transition: transform 250ms linear;
-  }
+.project::before {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33%);
+  transition: 300ms opacity linear;
+}
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+.project::after {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  transition: 300ms opacity linear;
+}
 
-  .buttons {
-    margin-bottom: 10px;
-    display: flex;
-    gap: 10px;
-  }
+.project > * {
+  z-index: 1;
+}
 
-  .content > p {
-    background-color: rgba(0,0,0,0);
-    height: 132px;
-  }
-  
-  .project h3,
-  .content {
-    transform: translateY(13ex);
-  }
-  
-  .project h3 {
-    margin-bottom: 10px;
-    font-size: 1.7rem;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 0.03ch;
-    transition: 300ms transform ease;
-  }
-  
-  .content {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  
-  .content {
-    opacity: 0;
-    transition: 300ms opacity linear, 300ms transform ease-in-out;
-  }
-  
-  .project:focus {
-    outline: 0.5rem solid white;
-    outline-offset: -0.5rem;
-  }
-  
-  .project:hover :is(h3, div),
-  .project:focus :is(h3, div) {
-    transform: none;
-  }
-  
-  .project:hover::after,
-  .project:focus::after,
-  .project:hover::before,
-  .project:focus::before {
-    opacity: 0.65;
-    background-color:rgba(25,202,224,.2);
-    background-image:linear-gradient(180deg,rgba(25,202,224,.2),rgba(25,202,224,.2)),linear-gradient(180deg,rgba(28,30,31,.9),rgba(28,30,31,.9)),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png");
-  }
-  
-  .project:hover div,
-  .project:focus div {
-    opacity: 1;
-    box-shadow: 0 0 10px 0 rgb(25 202 224 / 50%);
-  }
+.project img {
+  width: 100%;
 
-  .project:hover,
-  .project:focus {
-    transform: scale(1.1);    
-  }
-  
-  .project:hover img,
-  .project:focus img {
-    transform: scale(1.05) rotate(1deg);
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  transition: transform 250ms linear;
+}
 
-  
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.buttons {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.content > p {
+  background-color: rgba(0,0,0,0);
+  height: 132px;
+}
+
+.project h3,
+.content {
+  transform: translateY(13ex);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.03ch;
+  transition: 300ms transform ease;
+}
+
+.content {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content {
+  opacity: 0;
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+.project:focus {
+  outline: 0.5rem solid white;
+  outline-offset: -0.5rem;
+}
+
+.project:hover :is(h3, div),
+.project:focus :is(h3, div) {
+  transform: none;
+}
+
+.project:hover::after,
+.project:focus::after,
+.project:hover::before,
+.project:focus::before {
+  opacity: 0.65;
+  background-color:rgba(25,202,224,.2);
+  background-image:linear-gradient(180deg,rgba(25,202,224,.2),rgba(25,202,224,.2)),linear-gradient(180deg,rgba(28,30,31,.9),rgba(28,30,31,.9)),url("https://uploads-ssl.webflow.com/5f2099ad106eaaeb86184968/5fb090b08e1c0c2ac688f23e_Glitch.png");
+}
+
+.project:hover div,
+.project:focus div {
+  opacity: 1;
+}
+
+.project:hover,
+.project:focus {
+  transform: scale(1.1); 
+}
+
+.project:hover img,
+.project:focus img {
+  transform: scale(1.05) rotate(1deg);
+}
+
+
