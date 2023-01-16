@@ -26,7 +26,7 @@ const Resume = () => {
                 <div className='resumeContainer'>
                     <a href={myResume} target='_blank' rel='noopener noreferrer' className='resume'>
                         <Document file={myResume} options={{workerSrc: "pdf.worker.js"}} >
-                            <Page pageNumber={1} />
+                            <Page pageNumber={1} style={ {width: '100%'} } />
                         </Document>
                     </a>
                 </div>

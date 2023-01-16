@@ -18,7 +18,7 @@ body, h1, p, ul, li {
     padding: 0;
     color: white;
     box-sizing: border-box;
-    font-family: 'Oxanium', cursive;
+    font-family: 'Oxanium', sans-serif;
 }
 
 a {

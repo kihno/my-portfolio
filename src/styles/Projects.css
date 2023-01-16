@@ -10,7 +10,7 @@ p, h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
-  padding: 60px;
+  padding: 5%;
   gap: 40px;
   margin: auto;
 }
@@ -20,7 +20,7 @@ p, h3 {
   --border-color: linear-gradient(to bottom right, gold, rgba(255, 217, 0, 0.459));
   --border-width: 0.5em;
   --edge-size: 3em;
-  --project-width: 250px;
+  --project-width: 85%;
 
   width: var(--project-width);
   height: calc(var(--project-width) - calc(var(--project-width) / 4));
@@ -172,4 +172,8 @@ p, h3 {
   transform: scale(1.05) rotate(1deg);
 }
 
-
+@media screen and (max-width: 600px) {
+    .projectContainer {
+        max-width: 96%;
+    }
+}
