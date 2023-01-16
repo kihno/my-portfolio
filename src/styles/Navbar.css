@@ -77,9 +77,10 @@
         left: 0;
         top: 81px;
         text-align: center;
-        width: 100%;
-        background-color: black;
+        width: calc(100% - 2px);
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);;
         z-index: 1;
+        border: 1px solid #00fffb;
     }
 
     .navbar {
