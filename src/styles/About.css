@@ -1,8 +1,17 @@
 .aboutContainer {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    border: 1px solid #00fffb;
-    border-radius: 10px;
-    max-width: 600px;
-    padding: 60px;
-    margin: auto;
-  }
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  border: 1px solid #00fffb;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 60px;
+  margin: auto;
+}
+
+.aboutContainer>p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.hyperlink {
+  color: #00fffb;
+  text-decoration: underline;
+}
