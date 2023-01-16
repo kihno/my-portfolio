@@ -10,9 +10,7 @@
     margin-top: 250px;
 }
 
-.titleContainer {
-
-}
+/*Logo*/
 
 .title {
     font-family: 'Press Start 2P', cursive;
@@ -226,6 +224,8 @@
     padding: 10px;
 }
   
+/*Starry Background*/
+
 #stars {
     content:"";
     background: transparent;

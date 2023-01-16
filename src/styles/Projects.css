@@ -6,7 +6,7 @@ p, h3 {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   border: 1px solid #00fffb;
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 65%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
