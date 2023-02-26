@@ -4,20 +4,6 @@ import { Document, Page } from 'react-pdf';
 import myResume from '../pdf/Miles_Resume.pdf';
 import '../styles/Resume.css';
 
-const skills = [
-    'HTML',
-    'Javascript',
-    'CSS',
-    'React',
-    'Webpack',
-    'Firebase',
-    'MongoDB',
-    'Node',
-    'Express',
-    'MVR',
-    "CRUD"
-]
-
 const Resume = () => {
 
     return (
