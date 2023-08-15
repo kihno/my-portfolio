@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from './Navbar';
 import { Document, Page } from 'react-pdf';
-import myResume from '../pdf/Miles_Resume.pdf';
+import myResume from '../pdf/Miles-Resume_w.pdf';
 import '../styles/Resume.css';
 
 const Resume = () => {
