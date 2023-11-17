@@ -15,116 +15,137 @@ import TicTacToe from  '../images/thumbnails/tic-tac-toe.png';
 import Weather from  '../images/thumbnails/weather.png';
 import WheresWaldo from  '../images/thumbnails/wheres-waldo.png';
 import Stonecutters from  '../images/thumbnails/stonecutters.png';
+import BMWcareers from '../images/thumbnails/pacific-bmw-careers.jpg';
+import BMWblog from '../images/thumbnails/pacific-bmw-blog.jpg';
+import BMWspecials from '../images/thumbnails/pacific-bmw-specials.jpg';
 import '../styles/Projects.css';
 import '../styles/button.css';
 
 const Projects = () => {
     let projects = [
-        {
-          title: 'Battleship',
-          description: 'A Battleship game built with Webpack and TDD.',
-          image: Battleship,
-          link: 'https://kihno.github.io/battleship/',
-          repo: 'https://github.com/kihno/battleship',
-        },
-        {
-          title: 'Blog',
-          description: 'A full-stack blog with a react front-end and express back-end, featuring AI generated conspiracy themed posts.',
-          image: Blog,
-          link: 'https://blog-frontend-alm2.onrender.com/',
-          repo: 'https://github.com/kihno/blog',
-        },
-        {
-          title: 'Calculator',
-          description: 'A simple calculator app built with vanilla javascript.',
-          image: Calculator,
-          link: 'https://kihno.github.io/calculator/',
-          repo: 'https://github.com/kihno/calculator',
-        },
-        {
-          title: 'Inventory',
-          description: 'A CRUD inventory management app built with express.',
-          image: N64Store,
-          link: 'https://n64-store.onrender.com/catalog',
-          repo: 'https://github.com/kihno/inventory',
-        },
-        {
-          title: 'Library',
-          description: 'A library CRUD app for keeping track of your reading list.',
-          image: Library,
-          link: 'https://kihno.github.io/library-app/',
-          repo: 'https://github.com/kihno/library-app',
-        },
-        {
-          title: 'Memory-Game',
-          description: 'A Star Wars themed memory card game built with React.',
-          image: Memory,
-          link: 'https://kihno.github.io/memory-game/',
-          repo: 'https://github.com/kihno/memory-game',
-        },
-        {
-          title: 'Message Board',
-          description: `A Simpson's themed message board app built with express.`,
-          image: Stonecutters,
-          link: 'https://stonecutters.onrender.com/stonecutters',
-          repo: 'https://github.com/kihno/stonecutters',
-        },
-        {
-          title: 'Restaurant',
-          description: 'A single page restaurant website mock-up made with webpack.',
-          image: Restaurant,
-          link: 'https://kihno.github.io/restaurant-page/',
-          repo: 'https://github.com/kihno/restaurant-page',
-        },
-        {
-          title: 'Roshambo',
-          description: 'A Rock-Paper-Scissors game built with vanilla javascript.',
-          image: Roshambo,
-          link: 'https://kihno.github.io/rock-paper-scissors/',
-          repo: 'https://github.com/kihno/rock-paper-scissors',
-        },
-        {
-          title: 'Shopping Cart',
-          description: 'A storefront app that pulls products from an API and features a functioning shopping cart.',
-          image: Cart,
-          link: 'https://kihno.github.io/shopping-cart/',
-          repo: 'https://github.com/kihno/shopping-cart',
-        },
-        {
-          title: 'Sketch App',
-          description: 'A pixel drawing app based on the classic Etch-A-Sketch toy.',
-          image: Etchasketch,
-          link: 'https://kihno.github.io/etch-a-sketch/',
-          repo: 'https://github.com/kihno/etch-a-sketch',
-        },
-        {
-          title: 'Taskmaster',
-          description: 'A todo-list app built with a firebase back-end and Google sign-in authentication.',
-          image: Taskmaster,
-          link: 'https://kihno.github.io/todo-app/',
-          repo: 'https://github.com/kihno/todo-app',
-        },
-        {
-          title: 'Tic-Tac-Toe',
-          description: 'A Tic Tac Toe game built with vanilla javascript.',
-          image: TicTacToe,
-          link: 'https://kihno.github.io/tic-tac-toe/',
-          repo: 'https://github.com/kihno/tic-tac-toe',
-        },
-        {
-          title: 'Weather API',
-          description: 'A simple weather app that connects to Open Weather API.',
-          image: Weather,
-          link: 'https://kihno.github.io/weather-app/',
-          repo: 'https://github.com/kihno/weather-app',
-        },
-        {
-          title: `Where's Waldo`,
-          description: `A Where's Waldo puzzle app with firebase back-end.`,
-          image: WheresWaldo,
-          link: 'https://kihno.github.io/wheres-waldo/',
-          repo: 'https://github.com/kihno/wheres-waldo',
-        },
+      {
+        title: 'Pacific BMW Careers',
+        description: 'Full web page built with a CMS.',
+        image: BMWcareers,
+        link: 'https://www.pacificbmwcareers.com/',
+      },
+      {
+        title: 'Pacific BMW Blog',
+        description: 'Blog articles built with Wordpress.',
+        image: BMWblog,
+        link: 'https://www.pacificbmw.com/blog/',
+      },
+      {
+        title: 'Pacific BMW Specials',
+        description: 'Pacific BMW specials page built with Wordpress.',
+        image: BMWspecials,
+        link: 'https://www.pacificbmw.com/pre-owned-specials/',
+      },
+      {
+        title: 'Shopping Cart',
+        description: 'A storefront app that pulls products from an API and features a functioning shopping cart.',
+        image: Cart,
+        link: 'https://kihno.github.io/shopping-cart/',
+        repo: 'https://github.com/kihno/shopping-cart',
+      },
+      {
+        title: 'Restaurant',
+        description: 'A single page restaurant website mock-up made with webpack.',
+        image: Restaurant,
+        link: 'https://kihno.github.io/restaurant-page/',
+        repo: 'https://github.com/kihno/restaurant-page',
+      },
+      {
+        title: 'Taskmaster',
+        description: 'A todo-list app built with a firebase back-end and Google sign-in authentication.',
+        image: Taskmaster,
+        link: 'https://kihno.github.io/todo-app/',
+        repo: 'https://github.com/kihno/todo-app',
+      },
+      {
+        title: 'Message Board',
+        description: `A Simpson's themed message board app built with express.`,
+        image: Stonecutters,
+        link: 'https://stonecutters.onrender.com/stonecutters',
+        repo: 'https://github.com/kihno/stonecutters',
+      },
+      {
+        title: `Where's Waldo`,
+        description: `A Where's Waldo puzzle app with firebase back-end.`,
+        image: WheresWaldo,
+        link: 'https://kihno.github.io/wheres-waldo/',
+        repo: 'https://github.com/kihno/wheres-waldo',
+      },
+      {
+        title: 'Weather API',
+        description: 'A simple weather app that connects to Open Weather API.',
+        image: Weather,
+        link: 'https://kihno.github.io/weather-app/',
+        repo: 'https://github.com/kihno/weather-app',
+      },
+      {
+        title: 'Battleship',
+        description: 'A Battleship game built with Webpack and TDD.',
+        image: Battleship,
+        link: 'https://kihno.github.io/battleship/',
+        repo: 'https://github.com/kihno/battleship',
+      },
+      {
+        title: 'Blog',
+        description: 'A full-stack blog with a react front-end and express back-end, featuring AI generated conspiracy themed posts.',
+        image: Blog,
+        link: 'https://blog-frontend-alm2.onrender.com/',
+        repo: 'https://github.com/kihno/blog',
+      },
+      {
+        title: 'Calculator',
+        description: 'A simple calculator app built with vanilla javascript.',
+        image: Calculator,
+        link: 'https://kihno.github.io/calculator/',
+        repo: 'https://github.com/kihno/calculator',
+      },
+      {
+        title: 'Inventory',
+        description: 'A CRUD inventory management app built with express.',
+        image: N64Store,
+        link: 'https://n64-store.onrender.com/catalog',
+        repo: 'https://github.com/kihno/inventory',
+      },
+      {
+        title: 'Library',
+        description: 'A library CRUD app for keeping track of your reading list.',
+        image: Library,
+        link: 'https://kihno.github.io/library-app/',
+        repo: 'https://github.com/kihno/library-app',
+      },
+      {
+        title: 'Memory-Game',
+        description: 'A Star Wars themed memory card game built with React.',
+        image: Memory,
+        link: 'https://kihno.github.io/memory-game/',
+        repo: 'https://github.com/kihno/memory-game',
+      },
+      {
+        title: 'Roshambo',
+        description: 'A Rock-Paper-Scissors game built with vanilla javascript.',
+        image: Roshambo,
+        link: 'https://kihno.github.io/rock-paper-scissors/',
+        repo: 'https://github.com/kihno/rock-paper-scissors',
+      },
+      {
+        title: 'Sketch App',
+        description: 'A pixel drawing app based on the classic Etch-A-Sketch toy.',
+        image: Etchasketch,
+        link: 'https://kihno.github.io/etch-a-sketch/',
+        repo: 'https://github.com/kihno/etch-a-sketch',
+      },
+      {
+        title: 'Tic-Tac-Toe',
+        description: 'A Tic Tac Toe game built with vanilla javascript.',
+        image: TicTacToe,
+        link: 'https://kihno.github.io/tic-tac-toe/',
+        repo: 'https://github.com/kihno/tic-tac-toe',
+      },
       ];
 
     return (
@@ -138,7 +159,7 @@ const Projects = () => {
                                     <p>{project.description}</p>
                                         <div className="buttons">
                                             <a target='_blank' rel='noopener noreferrer' href={project.link} className='button'>Live Site</a>
-                                            <a target='_blank' rel='noopener noreferrer' href={project.repo} className='button'>Repo</a>
+                                            {project.repo && <a target='_blank' rel='noopener noreferrer' href={project.repo} className='button'>Repo</a>}
                                         </div>
                                 </div>
                                 <img src={project.image} alt={project.title}></img>
